@@ -1,9 +1,15 @@
-function rollDice () {
-    return Math.floor (Math.random () * 6);
-    for (let i = 0; i < 5; i++) console.log(rollDice () );
-    5
-    1
-    4
-    2
-    0
+const dice = document.getElementById('dice-btn');
+
+function diceGameSix() {
+	var randomDice = Math.floor((Math.random() * 6) + 1);
+	var diceLocation = "img/" + "Dice-" + randomDice + ".jpg";
+	var img1 = document.querySelectorAll("img")[0];
+	img1.setAttribute("src", diceLocation);
+}
+
+function diceGameTen() {
+	var randomDice = Math.floor((Math.random() * 10) + 1);
+	var diceLocation = "img/" + "Dice-" + randomDice + ".jpg";
+	var img1 = document.querySelectorAll("img")[0];
+	img1.setAttribute("src", diceLocation);
 }
